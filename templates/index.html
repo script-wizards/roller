@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>chargen | Script Wizards</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.statically.io/gh/script-wizards/homepage/main/favicon.png"
+    />
+    <style>
+      html {
+        display: table;
+        margin: auto;
+      }
+      body {
+        display: table-cell;
+        color: #ece3d0;
+        background-color: #212121;
+        margin: 0 25px 0 25px;
+        font-family: "Courier New", Courier, monospace;
+        width: 100vw;
+      }
+      p,
+      pre {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        font-family: "Courier New", Courier, monospace;
+      }
+      input[type="text"] {
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        outline: none;
+      }
+      input,
+      select,
+      textarea {
+        color: #ece3d0;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
+      }
+      a:link {
+        color: #ffa227;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #ffa227;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ffa227;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: #ffa227;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      .print-only {
+        display: none;
+      }
+      @media print {
+        body {
+          color: #000000;
+          background-color: #ffffff;
+        }
+        a,
+        footer {
+          color: #000000 !important;
+        }
+        .no-print {
+          display: none;
+        }
+        .print-only {
+          display: inline;
+        }
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #ece3d0;
+        background-color: #212121;
+        padding: 5px;
+      }
+      .container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <br /><br />
+      <div style="text-align: left">
+        <pre>
+   .-------.    ______
+  /   o   /|   /\     \
+ /_______/o|  /o \  o  \
+ | o     | | /   o\_____\
+ |   o   |o/ \o   /o    /
+ |     o |/   \ o/  o  /
+ '-------'     \/____o/
+
+merlin@scriptwizards.org:~$ roller
+        </pre>
+      </div>
+      <form action="/">
+        <label for="cmd">command:</label>
+        <input type="text" id="cmd" name="cmd" /><br /><br />
+        <input type="submit" style="display: none" />
+      </form>
+      {{.Msg}}
+    </div>
+    <footer>
+      Copyright © 2023 Script Wizards —
+      <a href="https://scriptwizards.org">scriptwizards.org</a>
+    </footer>
+  </body>
+</html>
