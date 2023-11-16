@@ -19,7 +19,7 @@
         background-color: #212121;
         margin: 0 25px 0 25px;
         font-family: "Courier New", Courier, monospace;
-        width: 100vw;
+        font-size: 30px;
       }
       p,
       pre {
@@ -37,8 +37,8 @@
       select,
       textarea {
         color: #ece3d0;
+        font-size: 30px;
         font-family: "Courier New", Courier, monospace;
-        font-size: 16px;
       }
       a:link {
         color: #ffa227;
@@ -119,7 +119,7 @@ merlin@scriptwizards.org:~$ roller
         <input type="text" id="cmd" name="cmd" /><br /><br />
         <input type="submit" style="display: none" />
       </form>
-      {{.Msg}}
+      {{if .Msg}}{{.Msg}}{{else}}<br />{{end}}
     </div>
     <footer>
       Copyright © 2023 Script Wizards —
