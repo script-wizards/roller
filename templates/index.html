@@ -118,7 +118,13 @@ merlin@scriptwizards.org:~$ roller
       </div>
       <form action="/">
         <label for="cmd">command:</label>
-        <input type="text" id="cmd" name="cmd" /><br /><br />
+        <input
+          type="text"
+          onFocus="this.select()"
+          autofocus
+          id="cmd"
+          name="cmd"
+        /><br /><br />
         <input type="submit" style="display: none" />
       </form>
       {{if .Msg}}{{.Msg}}{{else}}<br />{{end}}
